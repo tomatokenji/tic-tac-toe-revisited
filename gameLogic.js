@@ -66,6 +66,16 @@ var checkForWins = function(){
   if((board[2] !== null) && board[2]===board[4] && board[4]===board[6]){
     return board[2];
   }
+
+  var count = 0;
+  for(var i=0; i<board.length; i++){
+    if(board[i] === null){
+      count++;
+    }
+  }
+  if(count ===0){
+    return 3;
+  }
   return 0;
 }
 
@@ -79,10 +89,6 @@ var gameEnded = function(){
   }
   console.log("count: " + count);
   if(checkForWins() === 0){
-    console.log("game still continue");
-    return false;
-  }
-  if(count === 0){
     console.log("game still continue");
     return false;
   }

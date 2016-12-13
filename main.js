@@ -8,24 +8,29 @@ $(document).ready(function(){
       toChangePlayer();
       $('h3').html(returnString());
       winAlert();
+      if(gameEnded()){
+        resetBoard();
+      }
     }
     else if (playerCheck === 2){
       $(this).append('<img class = "icon" src="img/player2.jpg" alt = "player 2">');
       toChangePlayer();
       $('h3').html(returnString());
       winAlert();
+      if(gameEnded()){
+        resetBoard();
+      }
     }
   });
 
   //if win, pop-up box appears
   var winAlert = function(){
     var winner = checkForWins();
-    gameEnded();
     if(winner === 1 || winner ===2){
       alert("player " + winner + " wins!");
-      resetBoard();
     }
   }
+
 
   //var for resetting the board
   var resetBoard = function(){
