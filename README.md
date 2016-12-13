@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the [first part of our Tic Tac Toe Mini Project](https://github.com/wdi-sg/tic-tac-tester), you created the logic for a Tic Tac Toe game using TDD. 
+In the [first part of our Tic Tac Toe Mini Project](https://github.com/wdi-sg/tic-tac-tester), you created the logic for a Tic Tac Toe game using TDD.
 
 Now it's time to add a GUI (Graphical User Interface) using HTML, CSS and JavaScript DOM Manipulation.
 
@@ -56,4 +56,3 @@ Please find some screenshots of what you'll be creating.  Feel free to get creat
 
 - [CSS-Tricks "What Is The DOM"](https://css-tricks.com/dom/)
 - [More on events with Eloquent JavaScript](http://eloquentjavascript.net/14_event.html)
-
